@@ -1,0 +1,117 @@
+/**
+ * Main stylesheet for gayanvirajith.github.io
+ *
+ */
+
+@import "helper";
+
+@import "color";
+
+@import "config-values";
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/**
+ * Nav-bar styling
+ */
+.navbar-default {
+
+  background: transparent;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  @media (max-width: @screen-xs-max) {
+    background: transparent;
+    background-color: rgba(255, 255, 255, 0.6);
+
+    border-bottom: none;
+  }
+
+  .navbar-toggle {
+    .rounded-corners(0px);
+    .make-transitions(all);
+  }
+
+  .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: rgba(1, 1, 1, 0.88);
+    span.icon-bar {
+      background-color: @color-white;
+    }
+  }
+
+  .navbar-toggle:focus {
+    background-color: rgba(1, 1, 1, 0.88);
+    span.icon-bar {
+      background-color: @color-white;
+    }
+  }
+}
+
+/**
+ * Index page hero-unit
+ */
+.index-hero-unit {
+  padding: 100px 100px 0;
+
+  @media (max-width: @screen-xs-max) {
+    padding: 40px;
+  }
+
+  h1 {
+    @media (max-width: @screen-xs-max) {
+      font-size: 26px;
+    }
+  }
+  h2 {
+    line-height: 1.5em;
+    @media (max-width: @screen-xs-max) {
+      line-height: 1.2em;
+      font-size: 20px;
+    }
+  }
+  h3 {
+    @media (max-width: @screen-xs-max) {
+      font-size: 16px;
+    }
+  }
+  h4{
+    margin-top: 20px;
+    @media (max-width: @screen-xs-max) {
+      font-size: 14px;
+      line-height: 1.3em;
+    }
+  }
+  h5{
+    margin-top: 15px;
+    @media (max-width: @screen-xs-max) {
+      line-height: 1.3em;
+    }
+  }
+}
+
+
+footer.footer-bar {
+  padding: 5px;
+  border-top: 1px #f3f3f3 solid;
+
+  h3 {margin-top: 0;}
+
+  a {color: @theme-color-1;.make-transitions(color);}
+  a:hover, a:active, a:focus {
+    color: @theme-color-1 - 20;
+  }
+  span {
+    a {
+      text-decoration: none;
+    }
+  }
+  span:after {
+    content:  "/";
+  }
+  span:last-child:after {
+    content:  "";
+  }
+
+}

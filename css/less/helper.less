@@ -1,0 +1,62 @@
+/* Round corners default 5px */
+.rounded-corners (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+/* Css transitions default delay would be 0.2 seconds */
+.make-transitions(@prop, @seconds: 0.2s) {
+  -webkit-transition: @prop @seconds ease-in;
+  -moz-transition: @prop @seconds ease-in;
+  -o-transition: @prop @seconds ease-in;
+  transition: @prop @seconds ease-in;
+}
+
+.make-transitions-with(@prop, @animate: ease-in, @seconds: 0.2s) {
+  -webkit-transition: @prop @seconds @animate;
+  -moz-transition: @prop @seconds @animate;
+  -o-transition: @prop @seconds @animate;
+  transition: @prop @seconds @animate;
+}
+
+.margin-zero-auto {
+  margin: 0 auto;
+}
+
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity .8s ease-in;
+  -moz-transition: opacity .8s ease-in;
+  -o-transition: opacity .8s ease-in;
+  transition: opacity .8s ease-in;
+}
+
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.padding-top-20 {
+  padding-top: 10px;
+}
+
+.padding-top-bottom-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.padding-top-15 {
+  padding-top: 15px;
+}
+.padding-bottom-15 {
+  padding-bottom: 15px;
+}
+
