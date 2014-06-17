@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Posts"
+title: "Posts on Gayan Virajith Website"
 description: ""
 group: navigation
 menuTitle: Posts
@@ -22,11 +22,9 @@ menuTitle: Posts
 
                 <div class="post-item">
                     <h1>{{ post.title }}</h1>
-                    <p class="author">
-                        <span class="date">{{ post.date }}</span>
-                    </p>
                     <div class="content">
                         {{ post.content }}
+                        <p class="meta">{{ post.date | date_to_string }}</p>
                     </div>
                     <div class="row">
                         <div class="col-sm-6">
