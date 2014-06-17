@@ -55,8 +55,8 @@ task :post do
     post.puts "category: #{category}"
     post.puts "tags: #{tags}"
     post.puts "permalink: #{slug}"
-    post.puts 'audio: ""'
-    post.puts 'video: ""'
+    post.puts 'audio: '
+    post.puts 'video: '
     post.puts "---"
   end
 end # task :post

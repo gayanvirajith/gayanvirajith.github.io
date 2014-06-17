@@ -27,6 +27,13 @@ group: navigation
 
                     <div class="content">
                         <h3>{{ post.title }}</h3>
+
+                        {% if page.video %}
+                        <div class="video-container">
+                            {{page.video}}
+                        </div>
+                        {% endif %}
+
                         {% if post.description %}
                         <p class="post-summary">{{post.description}}</p>
                         {% endif %}
@@ -44,7 +51,7 @@ group: navigation
 
                                 </span>
                                     <span class="category">
-                                    <a title="Category {{tag}}" href="/categories.html#{{post.category}}">{{post.category}}</a>
+                                    <a title="Category {{post.category}}" href="/categories.html#{{post.category}}">{{post.category}}</a>
                                     </span>
                             </p>
 

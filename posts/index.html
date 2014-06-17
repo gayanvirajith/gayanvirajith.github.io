@@ -17,7 +17,16 @@ menuTitle: Posts
             <div class="post-item-wrapper">
 
                 {% if post.image %}
-                <img src="{{post.image}}" class="img-responsive"/>
+                <a href="{{post.url}}" title="{{post.title}}">
+                    <img src="{{post.image}}" class="img-responsive" alt="{{post.title}}"/>
+                </a>
+                {% endif %}
+
+
+                {% if post.audio %}
+                <div class="audio-container">
+                    {{post.audio}}
+                </div>
                 {% endif %}
 
                 <div class="post-item">
