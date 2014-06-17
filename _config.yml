@@ -1,6 +1,6 @@
 name: Gayan Virajith
 markdown: redcarpet
 pygments: true
-url: http://localhost:4000
+url: http://gayanvirajith.github.io
 paginate: 2 # Pagination based on number of post
 paginate_path: "posts/page:num"

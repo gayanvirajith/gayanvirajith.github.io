@@ -1,9 +1,66 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
-</div>
+<section class="container post-item-container" itemscope itemtype="http://schema.org/Blog">
+    <article class="col-xs-12 post-item-wrapper" itemscope itemtype="http://schema.org/BlogPosting">
+
+        {% if page.image %}
+        <img src="{{page.image}}" class="img-responsive"/>
+        {% endif %}
+
+        {% if page.audio %}
+        <div class="audio-container">
+            {{page.audio}}
+        </div>
+        {% endif %}
+
+        <div class="post-item">
+
+            <h2 itemscope itemtype="name">{{ page.title }}</h2>
+
+            {% if page.video %}
+            <div class="video-container">
+                {{page.video}}
+            </div>
+            {% endif %}
+
+            <div class="post" itemscope itemtype="http://schema.org/articleBody">
+                {{ content }}
+                <p class="meta">{{ page.date | date_to_string }}</p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="controls">
+                        {% if page.next %}
+                        <!-- Standard button with label -->
+                        <a href="{{page.next.url}}" class="btn btn-default">
+                            <i class="fa fa-fw fa-angle-left"></i>
+                            Previous
+                        </a>
+                        {% endif %}
+
+                        {% if page.previous %}
+                        <!-- Standard button with label on the right side -->
+                        <a href="{{page.previous.url}}" class="btn btn-default">
+                            Next
+                            <i class="fa fa-fw fa-angle-right"></i>
+                        </a>
+                        {% endif %}
+                    </div>
+
+                </div>
+                <div class="col-sm-6">
+                    <ul class="post-socials">
+                        <li><a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.url}}&amp;t={{page.title}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/intent/tweet?original_referer={{site.url}}{{page.url}}&amp;text={{page.title}}&amp;url={{site.url}}{{page.url}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://plus.google.com/share?url={{site.url}}{{page.url}}" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <span class="hidden" itemscope itemtype="url">{{site.url}}{{page.url}}</span>
+        </div>
+    </article>
+</section>
