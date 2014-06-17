@@ -1,0 +1,91 @@
+---
+layout: default
+title: "Posts"
+description: ""
+group: navigation
+menuTitle: Posts
+---
+
+
+<div class="container">
+    <!-- This loops through the paginated posts -->
+
+    {% for post in paginator.posts %}
+
+    <div class="row ">
+        <div class="col-xs-12 post-item-container">
+            <div class="post-item-wrapper">
+
+                {% if post.image %}
+                <img src="{{post.image}}" class="img-responsive"/>
+                {% endif %}
+
+                <div class="post-item">
+                    <h1>{{ post.title }}</h1>
+                    <p class="author">
+                        <span class="date">{{ post.date }}</span>
+                    </p>
+                    <div class="content">
+                        {{ post.content }}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="{{post.url}}" class="btn btn-default">
+                                Read More <i class="fa fa-fw fa-angle-right"></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="post-socials">
+                                <li><a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{post.url}}&amp;t={{post.title}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/intent/tweet?original_referer={{site.url}}{{post.url}}&amp;text={{post.title}}&amp;url={{site.url}}{{post.url}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://plus.google.com/share?url={{site.url}}{{post.url}}" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    {% endfor %}
+
+    {% if paginator.total_pages > 1 %}
+    <ul class="pagination">
+        <li>
+            {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+                <i class="fa fa-fw fa-angle-double-left"></i>
+                Previous
+            </a>
+            {% else %}
+        <li class="disabled"><span><i class="fa fa-fw fa-angle-double-left"></i>Previous</span></li>
+        {% endif %}
+        </li>
+
+        {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+        <li class="active">
+            <a href="">{{ page }}</a>
+        </li>
+        {% elsif page == 1 %}
+        <li><a href="{{ 'posts/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+        {% else %}
+        <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+        {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+        <li>
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+                Next
+                <i class="fa fa-fw fa-angle-double-right"></i>
+            </a>
+        </li>
+        {% else %}
+        <li class="disabled"><span>Next <i class="fa fa-fw fa-angle-double-right"></i></span></li>
+        {% endif %}
+    </ul>
+    {% endif %}
+</div>
