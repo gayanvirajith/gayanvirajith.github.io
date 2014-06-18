@@ -652,6 +652,9 @@ ul.post-socials li a {
 ul.post-socials li a:hover {
   background: #ddd;
 }
+ul.post-socials li:before {
+  content: "" !important;
+}
 /**
  * Pagination
  */
