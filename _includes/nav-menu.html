@@ -1,7 +1,5 @@
 <ul class="nav navmenu-nav">
 
-
-
     {% assign menuItems = include.menuItems | split: "|" %}
     {% for item in menuItems %}
 
@@ -27,21 +25,5 @@
         </a>
     </li>
     {% endfor %}
-
-    <!--{% assign pages_list = site.pages %}-->
-    <!--{% assign group = 'navigation' %}-->
-
-    <!--{% for node in pages_list %}-->
-    <!--{% if group == null or group == node.group %}-->
-    <!--{% if page.url == node.url %}-->
-    <!--<li class="active"><a href="{{node.url}}" class="active">{{node.menuTitle}}</a></li>-->
-    <!--{% else %}-->
-    <!--<li class=""><a href="{{node.url}}">{{node.menuTitle}}</a></li>-->
-    <!--{% endif %}-->
-    <!--{% endif %}-->
-    <!--{% endfor %}-->
-    <!--{% assign pages_list = nil %}-->
-    <!--{% assign group = nil %}-->
-
 </ul>
 
