@@ -14,7 +14,5 @@ video:
 Hello everyone! This is me. I hope you would find useful stuff from my website, which I am planning
  to update time to time.
 
-Jekyll also offers powerful support for code snippets:
-
 
 Thanks ~ Gayan Virajith
