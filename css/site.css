@@ -378,9 +378,23 @@ footer.footer-bar span:last-child:after {
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
+.post-item-container .post-item-wrapper .post-item span.meta,
 .post-item-container .post-item-wrapper .post-item p.meta {
   font-size: 11px;
   color: #cacaca;
+}
+.post-item-container .post-item-wrapper .post-item ul li {
+  list-style: none !important;
+  position: relative;
+}
+.post-item-container .post-item-wrapper .post-item ul li:before {
+  color: #faaa18;
+  font-family: 'FontAwesome';
+  content: "\f04d";
+  position: absolute;
+  top: 4px;
+  left: -20px;
+  font-size: .6em;
 }
 .post-item-container .post-item-wrapper .post-item .pre {
   -webkit-border-radius: 0px;

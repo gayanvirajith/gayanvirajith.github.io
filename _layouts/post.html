@@ -26,6 +26,11 @@ layout: default
             {% endif %}
 
             <div class="post" itemscope itemtype="http://schema.org/articleBody">
+
+                {% if post.description %}
+                <p class="post-summary">{{post.description}}</p>
+                {% endif %}
+
                 {{ content }}
                 <p class="meta">{{ page.date | date_to_string }}</p>
             </div>

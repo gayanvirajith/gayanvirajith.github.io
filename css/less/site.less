@@ -253,11 +253,28 @@ footer.footer-bar {
       p.lead-p {.lead-p;}
       .btn {.rounded-corners(0px);.make-transitions(all);}
       .controls {}
-      p.meta {
+      span.meta, p.meta {
         font-size: 11px;
         color: @color-grey + 100;
       }
 
+      ul {
+        li{
+          list-style: none !important;
+          position: relative;
+        }
+        li:before {
+
+          color: @theme-color-3;
+          font-family: 'FontAwesome';
+          content: "\f04d";
+          //      margin:0px 8px -20px;
+          position: absolute;
+          top:4px;
+          left: -20px;
+          font-size: .6em;
+        }
+      }
 
       /*****************************************************************************/
       /*
