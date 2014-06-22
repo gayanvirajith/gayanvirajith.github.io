@@ -285,11 +285,24 @@ footer .container {
 
 .post code {
   border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em; }
+  background-color: #eef; }
 
 .post pre code {
   border: none; }
+
+.post ul {
+  list-style: none; }
+  .post ul li {
+    margin-bottom: 10px;
+    position: relative; }
+  .post ul li:before {
+    color: #5b5b5b;
+    font-family: 'FontAwesome';
+    content: "\f04d";
+    position: absolute;
+    top: 5px;
+    left: -20px;
+    font-size: 0.5em; }
 
 /*****************************************************************************/
 /*

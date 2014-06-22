@@ -264,6 +264,7 @@ footer  {
   h1 {text-align: left;margin-bottom: 20px}
   p.meta {text-align: left;}
   a { font-weight: $bold;}
+
   header,article, footer {
     padding: 15px 0;
   }
@@ -293,13 +294,27 @@ footer  {
 .post code {
   border: 1px solid #ddd;
   background-color: #eef;
-  padding: 0 .2em;
 }
 
 .post pre code {
   border: none;
 }
 
+.post {
+  ul {
+    list-style:none;
+    li { margin-bottom:10px; position: relative; }
+    li:before {
+      color: $theme-color-2;
+      font-family: 'FontAwesome';
+      content: "\f04d";
+      position: absolute;
+      top:5px;
+      left: -20px;
+      font-size: 0.5em;
+    }
+  }
+}
 
 /*****************************************************************************/
 /*
