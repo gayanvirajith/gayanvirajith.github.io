@@ -34,7 +34,7 @@ On every file and directory has three types of permission
 To see the permission settings for a file, we can use the `ls` command as follows:
 
 <pre class="terminal">
-gayan:gayanvirajith.github.io$ ls -l
+gayan:gayanvirajith.github.io$ ls -l<br/>
 -rw-rw-r--  1 gayan gayan 2601 Jun 22 10:09 Rakefile
 ...
 </pre>
