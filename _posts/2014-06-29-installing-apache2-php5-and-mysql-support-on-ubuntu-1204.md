@@ -106,7 +106,7 @@ The document root of the default web site is `/var/www`. Create a small PHP file
  installed PHP version, modules, etc.
 
 <pre class="terminal">
-vi /var/www/info.php<br/>
+gedit /var/www/info.php<br/>
 </pre>
 
 `<?php phpinfo(); // place this in /var/www/info.php ?>`<br/>
