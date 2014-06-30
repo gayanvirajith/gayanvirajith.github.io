@@ -61,10 +61,10 @@ apt-get install apache2
 Double check by typing the `localhost` or 'http://127.0.0.1' on your browser. You should be able to see the Apache2 page.
 
 On Ubuntu Apache2 default document root is under `/var/www` and the configuration file is
-under `/etc/apache2/apache2.conf`.
+ under `/etc/apache2/apache2.conf`.
 
 Extra configurations are located in child directories of the `/etc/apach2` such as `/etc/apache2/mods-enabled`
-(for Apache modules) and `/etc/apache2/sites-enabled` (for virtual hosts)
+ (for Apache modules) and `/etc/apache2/sites-enabled` (for virtual hosts)
 
 ### Step 5 - Installing php5
 
@@ -102,8 +102,8 @@ Restart you apache after install above modules.
 ### Step 7 - Finaly test your php 
 
 The document root of the default web site is `/var/www`. Create a small PHP file `info.php` in that directory
-and call it in a browser. The file will display lots of useful details about our PHP installation, such as the
-installed PHP version, modules, etc.
+ and call it in a browser. The file will display lots of useful details about our PHP installation, such as the
+ installed PHP version, modules, etc.
 
 <pre class="terminal">
 vi /var/www/info.php<br/>
