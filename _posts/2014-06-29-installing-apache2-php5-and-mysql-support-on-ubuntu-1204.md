@@ -88,13 +88,14 @@ To get MySQL support you can install `php5-mysql` package. But it is always bett
 as well. Here are some basic modules:
 
 <pre class="terminal">
+# install multiple modules at ones<br/>
 apt-get install php5-mysql php5-curl php5-gd php5-intl php-pear php5-imagick php5-imap php5-mcrypt php5-memcache php5-ming php5-ps php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl<br/>
 </pre>
 
 Restart you apache after install above modules.
 
 <pre class="terminal">
-# restart apache2
+# restart apache2<br/>
 /etc/init.d/apache2 restart
 </pre>
 
