@@ -30,8 +30,8 @@ Before you start execute any commands, make sure you logged-in as root. Try foll
 The command will ask your root password, hit enter after input your root password.
 
 <pre class="terminal">
-#login as super user<br/>
-<code>sudo su</code><br/>
+#login as super user
+<code>sudo su</code>
 </pre>
 
 ### Step 3 - Installing MySQL 5
@@ -39,22 +39,21 @@ The command will ask your root password, hit enter after input your root passwor
 Use following command to install MySQL. 
 
 <pre class="terminal">
-# install mysql server along with the client<br/>
-apt-get install mysql-server mysql-client<br/>
-
+# install mysql server along with the client
+apt-get install mysql-server mysql-client
 </pre>
 
 Install would ask you to provide a password for the MySQL root user. 
 
-`New password for the MySQL "root" user: < yournewpassword`<br/><br/>
-`Repeat password for the MySQL "root" user: < yournewpassword`<br/>
+`New password for the MySQL "root" user: < yournewpassword`
+`Repeat password for the MySQL "root" user: < yournewpassword`
 
 ### Step 4 - Installing Apache2
 
 Try following command to install apache2.
 
 <pre class="terminal">
-# install apache2<br/>
+# install apache2
 apt-get install apache2
 </pre>
 
@@ -71,15 +70,15 @@ Extra configurations are located in child directories of the `/etc/apach2` such 
 Install PHP5 and the Apache PHP5 module as follows:
 
 <pre class="terminal">
-# install php5 and apache2 php module<br/>
-apt-get install php5 libapache2-mod-php5<br/>
+# install php5 and apache2 php module
+apt-get install php5 libapache2-mod-php5
 </pre>
 
 You should restart Apache afterwards:
 
 <pre class="terminal">
-# restart apache2 server<br/>
-/etc/init.d/apache2 restart<br/>
+# restart apache2 server
+/etc/init.d/apache2 restart
 </pre>
 
 ### Step 6 - Get MySQL support in php5
@@ -88,14 +87,14 @@ To get MySQL support you can install `php5-mysql` package. But it is always bett
 as well. Here are some basic modules:
 
 <pre class="terminal">
-# install multiple modules at ones<br/>
-apt-get install php5-mysql php5-curl php5-gd php5-intl php-pear php5-imagick php5-imap php5-mcrypt php5-memcache php5-ming php5-ps php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl<br/>
+# install multiple modules at ones
+apt-get install php5-mysql php5-curl php5-gd php5-intl php-pear php5-imagick php5-imap php5-mcrypt php5-memcache php5-ming php5-ps php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl
 </pre>
 
 Restart you apache after install above modules.
 
 <pre class="terminal">
-# restart apache2<br/>
+# restart apache2
 /etc/init.d/apache2 restart
 </pre>
 
@@ -106,10 +105,10 @@ The document root of the default web site is `/var/www`. Create a small PHP file
  installed PHP version, modules, etc.
 
 <pre class="terminal">
-gedit /var/www/info.php<br/>
+gedit /var/www/info.php
 </pre>
 
-`<?php phpinfo(); // place this in /var/www/info.php ?>`<br/>
+`<?php phpinfo(); // place this in /var/www/info.php ?>`
 
 Now try to view this file from your browser. `http://127.0.0.1/info.php`. You would see lots of information about LAMP
 (Linux+Apache2+MySQL+php) settings.

@@ -34,7 +34,7 @@ On every file and directory has three types of permission
 To see the permission settings for a file, we can use the `ls` command as follows:
 
 <pre class="terminal">
-gayan:gayanvirajith.github.io$ ls -l<br/>
+gayan:gayanvirajith.github.io$ ls -l
 -rw-rw-r--  1 gayan gayan 2601 Jun 22 10:09 Rakefile
 ...
 </pre>
@@ -54,18 +54,18 @@ To change the file/folder permission, we can use `chmod` command.
 An easy way to remember permission settings as a series of bits (0's and 1's). Here how it works:
 
 <pre>
-rwx rwx rwx # 111 111 111<br/>
-rw- rw- rw- # 110 110 110<br/>
-rwx --- --- # 111 000 000<br/>
+rwx rwx rwx # 111 111 111
+rw- rw- rw- # 110 110 110
+rwx --- --- # 111 000 000
 </pre>
 
 How it looks in binary:
 
 <pre>
-rwx = 111 in binary = 7<br/>
-rw- = 110 in binary = 6<br/>
-r-x = 101 in binary = 5<br/>
-r-- = 100 in binary = 4<br/>
+rwx = 111 in binary = 7
+rw- = 110 in binary = 6
+r-x = 101 in binary = 5
+r-- = 100 in binary = 4
 </pre>
 
 Now you've got the idea!(I believe). So if you combine each of three sets of permissions as single digit,
@@ -84,25 +84,25 @@ gayan:gayanvirajith.github.io$ chmod 600 some-file.txt
 
 ##### Change all folder / sub folders / files to 755
 <pre class="terminal">
-gayan:gayanvirajith.github.io$ ls -l<br/>
-total xx<br/>
-drwxrwxr-x  3 gayan gayan 4096 Jun 21 02:52 assets<br/>
+gayan:gayanvirajith.github.io$ ls -l
+total xx
+drwxrwxr-x  3 gayan gayan 4096 Jun 21 02:52 assets
 gayan:gayanvirajith.github.io$ chmod 755 -R assets
 </pre>
 
 ##### Change all folders and sub directories to 755
 <pre class="terminal">
-gayan:gayanvirajith.github.io$ ls -l<br/>
-total xx<br/>
-drwxrwxr-x  3 gayan gayan 4096 Jun 21 02:52 assets<br/>
-gayan:gayanvirajith.github.io$ find ./assets -type d -exec chmod 755 {} \;<br/>
+gayan:gayanvirajith.github.io$ ls -l
+total xx
+drwxrwxr-x  3 gayan gayan 4096 Jun 21 02:52 assets
+gayan:gayanvirajith.github.io$ find ./assets -type d -exec chmod 755 {} \;
 </pre>
 
 ##### Change all files to 755
 <pre class="terminal">
-gayan:gayanvirajith.github.io$ ls -l<br/>
-total xx<br/>
-drwxrwxr-x  3 gayan gayan 4096 Jun 21 02:52 assets<br/>
+gayan:gayanvirajith.github.io$ ls -l
+total xx
+drwxrwxr-x  3 gayan gayan 4096 Jun 21 02:52 assets
 gayan:gayanvirajith.github.io$ find ./assets -type f -exec chmod 644 {} \;
 </pre>
 
