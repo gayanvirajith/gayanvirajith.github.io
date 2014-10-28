@@ -2,6 +2,7 @@
 layout: page
 title: About me
 permalink: /about/
+browser_title: About - Gayan Virajith
 ---
 
 Hi, I am Gayan Virajith, a developer (who works on the web) based on Depanama, 
