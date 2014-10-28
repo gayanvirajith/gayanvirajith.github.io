@@ -1,7 +1,7 @@
 # Go Jekyll theme general configurations
 
 # Base URL
-baseurl: /go # the subpath of your site, e.g. /blog/
+baseurl: / # the subpath of your site, e.g. /blog/
 
 # Site live URL
 url: http://gayan.me # the base hostname & protocol for your site
