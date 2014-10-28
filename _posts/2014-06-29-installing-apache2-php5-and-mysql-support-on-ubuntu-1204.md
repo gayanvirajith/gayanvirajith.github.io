@@ -7,8 +7,8 @@ tags: []
 permalink: installing-apache2-php5-and-mysql-support-on-ubuntu-12-04
 audio: 
 video: 
-seoDescription: 'Installing apache2, php5 and MySQL support on Ubuntu 12.04 by Gayan Virajith'
-seoTitle: 'Installing apache2, php5 and MySQL support on Ubuntu 12.04 | Gayan Virajith'
+meta_description: 'Installing apache2, php5 and MySQL support on Ubuntu 12.04 by Gayan Virajith'
+browser_title: 'Installing apache2, php5 and MySQL support on Ubuntu 12.04 | Gayan Virajith'
 image: /assets/images/ubuntu-php-apach2.jpg
 ---
 

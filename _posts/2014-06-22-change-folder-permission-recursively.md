@@ -5,8 +5,8 @@ description: "Today post about File/Folder permission on linux. This may be help
 be work on linux distributions. I have been using linux over years now, so for me it is better than the other platforms."
 permalink: file-folder-permission-on-linux
 image: '/assets/images/file-permission-large.jpg'
-seoDescription: 'Read about file, folder permission in linux by Gayan Virajith'
-seoTitle: 'File, folder permission recursively on linux | Gayan Virajith'
+meta_description: 'Read about file, folder permission in linux by Gayan Virajith'
+browser_title: 'File, folder permission recursively on linux | Gayan Virajith'
 ---
 
 {{ page.description }}
