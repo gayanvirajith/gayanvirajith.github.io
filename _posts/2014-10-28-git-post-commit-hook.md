@@ -20,7 +20,7 @@ particular actions occur.
 
 ### Post commit
 
-Post commit hook is invoking by 'git commit'.  It takes no parameter, 
+Post commit hook is invoking by `git commit`.  It takes no parameter, 
 and is invoked after a commit is made.
 
 ### Real world example 
