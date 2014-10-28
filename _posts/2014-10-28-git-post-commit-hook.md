@@ -5,7 +5,7 @@ description: ""
 category: 
 tags: []
 permalink: git-post-commit-hook
-meta_description: Get to know about git post-commit. It invokes after a commit is made.
+meta_description: Get to know about git post-commit. It invokes after a commit is made by Gayan Virajith
 ---
 
 ## What are Git hooks
