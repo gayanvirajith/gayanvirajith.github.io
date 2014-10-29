@@ -2,7 +2,7 @@
 layout: page
 title: About me
 permalink: /about/
-browser_title: About - Gayan Virajith
+browser_title: Gayan Virajith | Web Developer based on Depanama, Sri Lanka
 ---
 
 Hi, I am Gayan Virajith, a developer (who works on the web) based on Depanama, 
