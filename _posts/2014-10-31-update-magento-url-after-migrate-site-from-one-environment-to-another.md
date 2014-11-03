@@ -89,7 +89,7 @@ where config_id = 6;
 > **Remember**: I got my config_id from my original queries and I need to use that to update my rows. If you are not sure of you config_id you can double check by selecting the row with that config_id (this is like double check)
 
 {% highlight sql %}
-select * from core_config_data where config_id = 261
+select * from core_config_data where config_id = 6
 {% endhighlight %}
 
 You can repeat the update steps for each of your config_id(s) and then you are 
