@@ -10,8 +10,8 @@ browser_title: Harmony jekyll theme by Gayan Viarjith and Maheshika Lakmali
 ---
 
 Harmony is a **free** jekyll theme for bloggers who love jekyll. 
-Created on 09/09/2014. See a live [Demo][demo] or 
-[Download the source][download] from Github.
+See a live [Demo][demo] or [Download the source][download] from Github.
+Created on 09/09/2014.
 
 <!--more-->
 
