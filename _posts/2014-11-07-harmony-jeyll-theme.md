@@ -24,7 +24,21 @@ Designed, built with love by [Gayan Virajith](http://gayan.me "Gayan Virajith (W
 ![Jekyll Harmony theme ]({{ "/thumbnails/" | append: page.thumbnail | prepend: site.baseurl | prepend: site.url  }})
 </span>
 
+### Features
+
+- Build for jekyll 2.x
+- Fluidly responsive
+- Browser support: IE 8+, Chrome, Safari and Firefox
+- Support Google analytics and RSS feeds
+- Sass based styles
+
+Please read the complete [reference guide on GitHub][download].
+
+#### License
+
+Free / Open sourced under [MIT][license]
 
 
 [demo]: http://gayan.me/harmony
 [download]: https://github.com/gayanvirajith/harmony
+[license]: https://github.com/web-create/harmony/blob/master/LICENSE.md
