@@ -1,0 +1,37 @@
+.project-list {
+	display:block;	
+	margin-top: 2em;
+	width: 100;
+	&::after { /* Clearfix */
+      content: '';
+      display: table;
+      clear: both;
+	}
+}
+
+.project-list .column-4, .project-list .column-6 {
+	@include column(1);
+}
+
+.project-list img, .project-img-wrap img {
+	border-left: 1px solid #e7e7e7;
+	border-right: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+
+	@include border-radius(0 0 .2em .2em);
+}
+
+.project-list .column-4 {
+	@include MQ(M) {
+		@include column(.4);			
+	}
+}
+
+.project-list .column-6 {
+	padding-top: 1em;
+	@include MQ(M) {
+		@include column(.6);
+		padding-left: 20px;		
+		padding-top: 0;
+	}
+}

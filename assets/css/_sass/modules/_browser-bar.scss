@@ -1,0 +1,48 @@
+%browser-frame {
+	  background-color: #E6E6E6;
+    height: 20px;
+    display: block;
+    @include border-radius(.25em .25em 0 0);
+    width: 100%;
+    position: relative;
+    max-width: 728px;
+    .btn-set {
+      position:absolute;
+      background-color: rgba(#717171, .5);
+      width: 20px;
+      height: 5px;
+      left: 15px;
+      top: 8px;      
+    }
+    .textbar {
+      position:absolute;
+      background-color: $color-white;
+      width: 70%;
+      height: 10px;
+      top: 5px;
+      left: 15%;
+    }
+
+    .menubar {
+      position:absolute;
+      background-color: $color-white;
+      width: 15px;
+      height: 2px;
+      right: 15px;
+      background: rgba(#717171, .5);
+
+      &.one {
+        top: 6px;        
+      }
+      &.two {
+        top: 10px;        
+      }
+      &.three {
+        top: 14px;
+      }
+    }    
+}
+
+.browser-frame {
+	@extend %browser-frame;
+}
