@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Community projects
+browser_title: Projects that I am currently contributing - Gayan Virajith
+meta_description: Being part of open source community is so nice. Projects that I am currently contributing for the open source community.
 ---
 <br>
 
