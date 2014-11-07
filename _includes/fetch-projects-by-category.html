@@ -1,0 +1,27 @@
+{% assign selector = include.selector %}
+{% assign isFound = false %}
+{% for post in site.posts %}
+{% if post.categories != null and post.categories != empty and post.categories contains selector %}			<div class="project-list">
+		<div class="column-4">
+			<a 	title="{{ post.title }}" 
+				href="{{ post.url | prepend: site.baseurl | prepend: site.url}}">
+				{% include browser-frame.html %}
+			<img 
+				src="{{ "/thumbnails/" | append: post.thumbnail | prepend: site.baseurl | prepend: site.url }}" 
+				alt="{{ post.title }}">
+			</a>
+		</div>
+		<div class="column-6">
+			<h3>{{ post.title }}</h3>
+			{% comment %}
+			{{ post.excerpt }}
+			{% endcomment %}
+			{% if post.content contains '<!--more-->' %}
+			  {{ post.content | split:'<!--more-->' | first }}
+			{% else %}
+			  {{ post.content }}
+			{% endif %}
+		</div>
+	</div>					
+{% endif %}
+{% endfor %}	
