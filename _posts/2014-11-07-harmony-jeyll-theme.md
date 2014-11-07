@@ -6,6 +6,7 @@ thumbnail: harmony-thumb.jpg
 tags: []
 permalink: harmony-jeyll-theme
 meta_description: Harmony is a free responsive jekyll theme by Gayan Virajith and Maheshika Lakmali. Sourced on Github -  https://github.com/gayanvirajith/harmony
+browser_title: Harmony jekyll theme by Gayan Viarjith and Maheshika Lakmali
 ---
 
 Harmony is a **free** jekyll theme for bloggers who love jekyll. 
