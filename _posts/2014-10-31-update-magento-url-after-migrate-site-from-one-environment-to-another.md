@@ -7,8 +7,6 @@ meta_description: 'How to update/edit magento base URL after migrate your site f
 browser_title: Update magento URL after migrate site from one environment to another | Gayan Virajith
 ---
 
-## Update Magento base-url
-
 This is a little stepping guide to update `baseurl` after migrate your 
 Magento website/web-store from one environment to another.
 

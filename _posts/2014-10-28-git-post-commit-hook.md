@@ -8,7 +8,6 @@ permalink: git-post-commit-hook
 meta_description: Get to know about git post-commit. It invokes after a commit is made by Gayan Virajith
 ---
 
-## What are Git hooks
 
 Like every other version constrol systems, Git has a method to execute custom 
 scrips when particular actions occur. We are calling it **Git Hooks**.
