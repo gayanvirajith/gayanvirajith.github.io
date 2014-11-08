@@ -295,14 +295,14 @@ img {
   width: 14rem;
   visibility: hidden;
   overflow-y: auto;
-  font-size: 18px;
+  @include font-size(15px);
   color: $color-white;
   background-color: lighten($color-1, 5%);
   -webkit-transition: all .5s ease-in-out;
           transition: all .5s ease-in-out;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   @include MQ(M) {
-    font-size: 20px;
+    @include font-size(15px);
   }
 }
 
@@ -315,9 +315,12 @@ img {
 
 .sidebar .sidebar-info {
   padding: 1rem;
+
 }
 
-.sidebar .sidebar-info.small p { font-size: 14px; }
+.sidebar .sidebar-info p { @include font-size(16px); }
+
+.sidebar .sidebar-info.small p { @include font-size(14px); }
 
 .sidebar .sidebar-info p:last-child {
   margin-bottom: 0;
@@ -395,21 +398,22 @@ img {
           height: 100%;
 
           -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+                  backface-visibility: hidden;
 
           -webkit-transition: -webkit-transform .2s, background 0s;
           -moz-transition: -moz-transform .2s, background 0s;
           transition: transform .2s, background 0s;
+
       }
 
       &::before {
           top: -6px;
-          transform: rotate(0);
+          @include transform(rotate(0));
       }
 
       &::after {
           bottom: -6px;
-          transform: rotate(0);
+          @include transform(rotate(0));
       }
   }
 }
@@ -429,12 +433,12 @@ img {
     &::before {
         top: -4px;
         width: 10px;
-        transform: rotate(-45deg);
+        @include transform(rotate(-45deg));
     }
     &::after {
         top: 4px;
         width: 10px;
-        transform: rotate(45deg);
+        @include transform(rotate(45deg));
     }        
   }
 }
@@ -469,7 +473,11 @@ img {
 }
 .wrap,
 .sidebar-toggle {
-  @include transition(transform .5s ease-in-out)
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  -moz-transition: -moz-transform .5s ease-in-out;
+  -ms-transition: -ms-transform .5s ease-in-out;
+  -o-transition: -o-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
 }
  
 #sidebar-checkbox:checked + .sidebar {
@@ -479,9 +487,7 @@ img {
 #sidebar-checkbox:checked ~ .sidebar,
 #sidebar-checkbox:checked ~ .wrap,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  -webkit-transform: translateX(14rem);
-      -ms-transform: translateX(14rem);
-          transform: translateX(14rem);
+  @include transform(translateX(14rem))
 }
 
 
@@ -510,7 +516,7 @@ img {
 /* Article title / Page title */
 .post-title a {
   color: $color-1;
-  border-bottom-width: 3px;
+  border-bottom-width: 2px;
 }
 
 /* Meta info after post-title */
