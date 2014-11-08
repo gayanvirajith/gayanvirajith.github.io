@@ -7,7 +7,7 @@
 				href="{{ post.url | prepend: site.baseurl | prepend: site.url}}">
 				{% include browser-frame.html %}
 			<img 
-				src="{{ "/thumbnails/" | append: post.thumbnail | prepend: site.baseurl | prepend: site.url }}" 
+				src="{{ "/thumbnails/" | append: post.thumbnail_small | prepend: site.baseurl | prepend: site.url }}" 
 				alt="{{ post.title }}">
 			</a>
 		</div>

@@ -3,6 +3,8 @@ layout: post
 title: "Harmony jeyll theme"
 category: community-project
 thumbnail: harmony-thumb.jpg
+thumbnail_small: harmony-thumb-sm.png
+thumbnail_large: harmony-thumb-lg.png
 tags: []
 permalink: harmony-jeyll-theme
 meta_description: Harmony is a free responsive jekyll theme by Gayan Virajith and Maheshika Lakmali. Sourced on Github -  https://github.com/gayanvirajith/harmony
@@ -21,7 +23,7 @@ Designed, built with love by [Gayan Virajith](http://gayan.me "Gayan Virajith (W
 
 {% include browser-frame.html %}
 <span class="project-img-wrap">
-![Jekyll Harmony theme ]({{ "/thumbnails/" | append: page.thumbnail | prepend: site.baseurl | prepend: site.url  }})
+![Jekyll Harmony theme ]({{ "/thumbnails/" | append: page.thumbnail_large | prepend: site.baseurl | prepend: site.url  }})
 </span>
 
 ### Features
