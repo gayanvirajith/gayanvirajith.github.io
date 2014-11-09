@@ -532,7 +532,7 @@ img {
 /* Related post articles */
 .related-posts {
   padding: 1em 0;
-  border-bottom: 1px solid $gray-lighter;
+  border-top: 1px solid $gray-lighter;
   @include MQ(M) {
     padding: 2em 0;
   }
