@@ -31,7 +31,7 @@ We have to place this post-commit file under `.git/hooks/`.
 Make sure `post-commit` file has execute permisson. This hook will fire when you
 commit changes to the master branch, and sync master branch changes to gh-pages.
 
-{% highlight sh %}
+{% highlight sh linenos %}
 #!/bin/sh
 # Filepath - .git/hooks/post-commit
 # Mirror master in gh-pages. 
