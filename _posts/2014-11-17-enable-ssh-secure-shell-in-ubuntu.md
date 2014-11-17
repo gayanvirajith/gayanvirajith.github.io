@@ -20,7 +20,7 @@ You could easily enable this service via OpenSSH, which is a free version
 of the SSH connectivity tools developed by the OpenBSD Project. 
 
 To to do that, press **Ctrl + Alt + T** on your keyboard to open the terminal.
-When it opens, issue the following commands below to install `ssh server`.
+When it opens, issue the following commands below to install `openssh-server`.
 
 {% highlight sh %}
   sudo apt-get update && apt-get install openssh-server
@@ -28,6 +28,12 @@ When it opens, issue the following commands below to install `ssh server`.
 
 Once you installed, use your SSH client to connect to your computer 
 using the default port 22.
+
+Example attempt: 
+
+{% highlight sh %}
+ssh gayan@192.168.0.102
+{% endhighlight %}
 
 ## Configure ssh server settings
 
