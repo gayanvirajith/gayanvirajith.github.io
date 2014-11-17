@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Welcome to Jekyll Go Theme
+title: Jekyll Go theme
 date:   2014-10-25 09:23:55
 categories: jekyll
 ---

@@ -236,6 +236,7 @@ blockquote {
   font-size: $blockquote-font-size;
   background-color: $blockquote-background-color;
   border-left: 2px solid $blockquote-border-color;
+  @include border-radius(0 .3em .3em 0);
   p,
   ul,
   ol {
@@ -288,7 +289,7 @@ th {
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9;
+  background-color: #f5f5f5;
 }
 
 
