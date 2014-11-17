@@ -19,7 +19,7 @@ remote command-line login, remote command execution etc.
 You could easily enable this service via OpenSSH, which is a free version 
 of the SSH connectivity tools developed by the OpenBSD Project. 
 
-To to do that, press ** Ctrl + Alt + T ** on your keyboard to open the terminal.
+To to do that, press **Ctrl + Alt + T** on your keyboard to open the terminal.
 When it opens, issue the following commands below to install `ssh server`.
 
 {% highlight sh %}
