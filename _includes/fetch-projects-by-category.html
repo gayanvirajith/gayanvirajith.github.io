@@ -14,7 +14,7 @@
 		<div class="column-6">
 			<h3>
 			<a 	title="{{ post.title }}" 
-				href="{{ post.url | prepend: site.baseurl | prepend: site.url}}">
+				href="{{ post.url | prepend: site.baseurl | prepend: site.url | append: '/' }}">
 			{{ post.title }}
 			</a>
 			</h3>
