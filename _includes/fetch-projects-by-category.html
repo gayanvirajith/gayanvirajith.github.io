@@ -4,7 +4,7 @@
 {% if post.categories != null and post.categories != empty and post.categories contains selector %}			<div class="project-list">
 		<div class="column-4">
 			<a 	title="{{ post.title }}" 
-				href="{{ post.url | prepend: site.baseurl | prepend: site.url}}">
+				href="{{ post.url | append: '/' | prepend: site.baseurl | prepend: site.url }}">
 				{% include browser-frame.html %}
 			<img 
 				src="{{ "/thumbnails/" | append: post.thumbnail_small | prepend: site.baseurl | prepend: site.url }}" 
@@ -14,7 +14,7 @@
 		<div class="column-6">
 			<h3>
 			<a 	title="{{ post.title }}" 
-				href="{{ post.url | prepend: site.baseurl | prepend: site.url | append: '/' }}">
+				href="{{ post.url | append: '/' | prepend: site.baseurl | prepend: site.url }}">
 			{{ post.title }}
 			</a>
 			</h3>

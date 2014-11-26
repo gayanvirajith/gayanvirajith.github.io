@@ -31,7 +31,7 @@ styles, `#sidebar-checkbox` for behavior. -->
 		{% endif %}
 
 		<a class="sidebar-nav-item {{ c }}" 
-			href="{{ item.href | prepend: site.baseurl | prepend: site.url | append: '/' }}">
+			href="{{ item.href | append: '/'| prepend: site.baseurl | prepend: site.url }}">
 			{{ item.title }}
 		</a>
 		{% endfor %}

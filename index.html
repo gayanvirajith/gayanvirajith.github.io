@@ -6,7 +6,7 @@ browser_title: Gayan Virajith | Web developer based in Colombo, Sri Lanka
   {% for post in paginator.posts %}
   <article class="post">
     <h1 class="post-title">
-      <a href="{{ post.url | prepend: site.baseurl | prepend: site.url | append: '/'  | replace: '//', '/' }}">
+      <a href="{{ post.url | append: '/' | prepend: site.baseurl | prepend: site.url | replace: '//', '/' }}">
         {{ post.title }}
       </a>
     </h1>
