@@ -21,13 +21,13 @@ browser_title: Gayan Virajith | Web developer based in Colombo, Sri Lanka
 <div class="pagination">
   
   {% if paginator.next_page %}
-      <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older</a>    
+      <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl | append: '/' | replace: '//', '/' }}">Older</a>    
   {% else %}
     <span class="pagination-item older">Older</span>
   {% endif %}
   
   {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Newer</a>
+    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl | append: '/' | replace: '//', '/' }}">Newer</a>
   {% else %}
     <span class="pagination-item newer">Newer</span>
   {% endif %}  

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About me
-permalink: /about/
 browser_title: Gayan Virajith | Web developer from Depanama, Sri Lanka
 ---
 

@@ -41,6 +41,6 @@ Please read the complete [reference guide on GitHub][download].
 Free / Open sourced under [MIT][license]
 
 
-[demo]: http://gayan.me/harmony
+[demo]: http://gayan.me/harmony/
 [download]: https://github.com/gayanvirajith/harmony
 [license]: https://github.com/web-create/harmony/blob/master/LICENSE.md
