@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Harmony jeyll theme"
+title: "Harmony jekyll theme"
 category: community-project
 thumbnail: harmony-thumb.jpg
 thumbnail_small: harmony-thumb-sm.png
