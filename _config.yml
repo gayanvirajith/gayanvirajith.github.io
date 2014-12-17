@@ -31,7 +31,7 @@ go:
 
   # Google Analytics/Webmaster key, leave blank to ignore
   google_analytics_key: UA-51832325-1
-  google_webmaster_key: iGowBFvyZY0ukLqi04rYcC2EWhpQIUUtIbwsuHv2YS8
+  google_webmaster_key: gtB1sjM4JP--tKbRbgSrK5LRbMNQCm22U_j8UGkmCu4
 
 # Conversion / Build settings 
 markdown:    kramdown
