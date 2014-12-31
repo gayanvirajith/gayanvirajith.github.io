@@ -227,7 +227,7 @@ interpersonal, leadership and organizational skills to conceive and achieve solu
       "type": "Node app"
     },
     {
-      "name": "ProcessWire Latest Forum Posts CLI",
+      "name": "ProcessWire Latest Forum Posts Cli",
       "description": "Node js command line tool to print out the latest ProcessWire forum posts to your terminal.",
       "url": "https://github.com/gayanvirajith/node-processwire-forum-posts",
       "urlLabel": "Github",
