@@ -5,7 +5,7 @@
 		<div class="column-4">
 			<a 	title="{{ post.title }}" 
 				href="{{ post.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url }}">
-				{% include browser-frame.html %}
+				{% include browser-frame.html customClass = 'browser-frame-sm' %}
 			<img 
 				src="{{ "/thumbnails/" | append: post.thumbnail_small | prepend: site.baseurl | prepend: site.url }}" 
 				alt="{{ post.title }}">

@@ -45,3 +45,10 @@
 .browser-frame {
 	@extend %browser-frame;
 }
+
+.browser-frame-sm {
+  max-width: 322px;
+  @include MQ(M) {
+    width: 100%;
+  }
+}
