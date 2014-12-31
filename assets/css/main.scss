@@ -363,6 +363,20 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+.img-thumbnail {
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  width: 100% \9;
+  max-width: 100%;
+  height: auto;
+}
  
 /* Style the `label` that we use to target the `.sidebar-checkbox` */
 .sidebar-toggle {

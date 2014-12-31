@@ -1,0 +1,48 @@
+.resume .resume-section {
+  padding: 1em 0;
+  border-top: 1px solid $gray-lighter;
+  display: block;
+  width: 100%;
+  overflow: hidden;  
+  @include MQ(M) {
+    padding: 2em 0
+  }
+}
+.resume  { 
+  h1, h2, h3, h4, h5, h6 {
+    color: $gray-darker;
+  }
+}
+
+.resume {
+  p, address, ul, ol, blockquote {
+    @include font-size(14px);
+  }
+}
+
+.resume address {
+  line-height: 1.6;
+}
+
+
+.resume .resume-section h4 { margin-top: 0;}
+.resume h5.header { text-transform: uppercase; letter-spacing:1px; color: #000; font-weight: bold;}
+.resume .resume-section .column-20, .resume .resume-section .column-80 {
+  @include column(1);
+}
+
+.resume .resume-section .column-20 {
+
+  @include MQ(M) {
+    @include column(.2);
+  }
+}
+
+.resume .resume-section .column-80 {
+  
+  @include MQ(M) {
+    @include column(.8);
+  }
+}
+
+.resume .resume-section .column-20 p { color: #000; padding-right: 2em; display: block;}
