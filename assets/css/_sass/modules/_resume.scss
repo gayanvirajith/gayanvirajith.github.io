@@ -25,7 +25,11 @@
 }
 
 
-.resume .resume-section h4 { margin-top: 0;}
+.resume .resume-section h4 { 
+  @include MQ(M) {
+    margin-top: 0;    
+  }
+}
 .resume h5.header { text-transform: uppercase; letter-spacing:1px; color: #000; font-weight: bold;}
 .resume .resume-section .column-20, .resume .resume-section .column-80 {
   @include column(1);
@@ -39,7 +43,7 @@
 }
 
 .resume .resume-section .column-80 {
-  
+
   @include MQ(M) {
     @include column(.8);
   }

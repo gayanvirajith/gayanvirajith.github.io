@@ -1,6 +1,8 @@
 ---
 layout: resume
 title: curriculum
+meta_description: 'Online resume/curriculum of Gayan Virajith'
+browser_title: 'Online resume | Gayan Virajith'
 ---
 
 {% assign resume = site.data.resume %}
