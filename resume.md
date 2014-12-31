@@ -9,7 +9,7 @@ title: curriculum
   <div class="column-20">
       <img 
         src="{{ "/thumbnails/" | append: resume.basics.picture | prepend: site.baseurl | prepend: site.url }}" 
-        alt="{{ post.title }}" class="img-thumbnail">
+        alt="{{  resume.basics.name  }}" class="img-thumbnail">
   </div>
   <div class="column-80">
     <h4>{{ resume.basics.name }} </h4>
