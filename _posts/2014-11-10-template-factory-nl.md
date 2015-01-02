@@ -20,7 +20,7 @@ Site: [http://template-factory.nl](http://template-factory.nl)
 
 - Shopping experience
 - Custom modules
-- Domain lookup module
+- Domain lookup module using [www.whoisxmlapi.com](http://www.whoisxmlapi.com)
 - Website directory
 - Client management
 
