@@ -1,18 +1,17 @@
 ---
 layout: post
-title: "Stillesloep website"
+title: "Nanny House - maisonnounou"
 category: official-project
-thumbnail_small: stillesloep-nl-thumb-sm.jpg
-thumbnail_large: stillesloep-nl-thumb-lg.jpg
+thumbnail_small: maisonnounou-thumb-sm.jpg
+thumbnail_large: maisonnounou-thumb-lg.jpg
 tags: []
-permalink: stillesloep.nl
-date:   2014-10-23 23:57:00
-order: 2
+permalink: maisonnounou.be
+date:   2014-10-23 23:55:00
 ---
 
-A responsive website of serving Boating experience around woerden, Netherlands.
+A Nanny House - french website who take care kids.
 
-Site: [http://stillesloep.nl](http://stillesloep.nl/)
+Site: [http://maisonnounou.be](http://maisonnounou.be/)
 
 <!--more-->
 
@@ -33,4 +32,4 @@ Site: [http://stillesloep.nl](http://stillesloep.nl/)
 Made With: [ProcessWire CMS/CMF](http://processwire.com/)
 
 ### Technologies 
-PHP, ProcessWire CMS, Less, Html5, CSS3, Fontawesome, Bootstrap, JQuery and Google Map v3 
+PHP, ProcessWire CMS, Less, Html5, CSS3, Fontawesome, Bootstrap, JQuery and Google Map
