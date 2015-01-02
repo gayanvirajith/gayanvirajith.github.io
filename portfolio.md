@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Official projects
-browser_title: Projects that I have done for Mearch B.V, the Netherlands - Gayan Virajith
+title: Portfolio
+browser_title: Portfolio/Projects that I have done for Mearch B.V, the Netherlands - Gayan Virajith
 meta_description: Here are the recents projects that I have developed for Mearch B.V, the Netherlands.
 ---
 

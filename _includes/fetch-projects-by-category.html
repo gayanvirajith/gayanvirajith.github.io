@@ -23,8 +23,16 @@
 			{% endcomment %}
 			{% if post.content contains '<!--more-->' %}
 			  {{ post.content | split:'<!--more-->' | first }}
+			  <a 	title="{{ post.title }}" 
+				href="{{ post.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url }}">
+				See more about project features.
+			</a>
 			{% else %}
 			  {{ post.content }}
+			  <a 	title="{{ post.title }}" 
+				href="{{ post.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url }}">
+				See more about project scope.
+			</a>
 			{% endif %}
 		</div>
 	</div>					
