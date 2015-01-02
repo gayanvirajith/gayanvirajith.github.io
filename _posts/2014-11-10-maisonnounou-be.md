@@ -17,9 +17,8 @@ Site: [http://maisonnounou.be](http://maisonnounou.be/)
 
 ### Special features
 
-- Custom map views with color markers, using Google Map version 3
-- Used ProcessWire [FormBuilder](http://modules.processwire.com/modules/form-builder/)
-- Tracks customer inquires 
+- Responsive
+- Used ProcessWire [FormBuilder](http://modules.processwire.com/modules/form-builder/) 
 - Cache management with ProcessWire [ProCache](http://modules.processwire.com/modules/pro-cache/)
 
 <br/>
