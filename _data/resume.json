@@ -31,16 +31,27 @@ interpersonal, leadership and organizational skills to conceive and achieve solu
   "work": [
     {
       "company": "Mearch B.V, the Netherlands",
+      "position": "Senior Software Engineer",
+      "website": "http://template-factory.nl",
+      "startDate": "February 2014",
+      "endDate": "Present",
+      "summary": "",
+      "highlights": [
+        "Involved developing highly optimized web solutions in order to get maximum speed when it comes to rendering",
+        "Trained and lead technical and support team.",
+        "Doing technical research & developments and applying knowledge when as possible.",
+      ]
+    },
+    {
+      "company": "Mearch B.V, the Netherlands",
       "position": "Software Engineer",
       "website": "http://template-factory.nl",
       "startDate": "February 2013",
-      "endDate": "Present",
+      "endDate": "February 2014",
       "summary": "",
       "highlights": [
         "Mainly involved for making User friendly, Cross browser compatible, Responsive websites without relying on any CSS frameworks.",
         "Implementing various kind of software applications for the web platform.",
-        "Training and leading technical support team.",
-        "Doing technical research & developments and applying knowledge when as possible."
       ]
     },
     {
