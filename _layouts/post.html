@@ -8,6 +8,19 @@ layout: default
   </header>
   <div class="post-meta">{{ page.date | date_to_string }}</div>
   {{ content }}
+
+  {% if page.categories != empty and page.categories contains 'official-project' %}
+  <div>
+    <br/>
+    <a class="btn" href="{{ '/portfolio' | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url  }}">Back to Portfolio</a>
+  </div>
+  {% endif %}
+  {% if page.categories != empty and page.categories contains 'community-project' %}
+  <div>
+    <br/>
+    <a class="btn" href="{{ '/projects' | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url  }}">Back to Community Projects</a>
+  </div>
+  {% endif %}
 </article>
 
 {% if site.related_posts %}
