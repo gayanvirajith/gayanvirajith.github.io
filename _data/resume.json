@@ -13,6 +13,7 @@ acumen to perform in a challenging and competitive environment by effectively, u
 interpersonal, leadership and organizational skills to conceive and achieve solutions.",
     "location": {
       "address": "190 / 6 C, Weera MW, Depanama",
+      "suburb": "Depanama",
       "postalCode": "10230",
       "city": "Pannipitiya",
       "countryCode": "SL",
@@ -249,6 +250,7 @@ interpersonal, leadership and organizational skills to conceive and achieve solu
     "fluency": "Fluent"
   }],
   "license": [ "Bike", "Car" ],
+  "portfolio": "/portfolio",
   "references": [{
     "name": "Jane Doe",
     "reference": "Reference..."

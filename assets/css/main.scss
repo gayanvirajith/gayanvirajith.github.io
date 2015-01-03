@@ -323,7 +323,7 @@ img {
 
 .sidebar .sidebar-info p { @include font-size(16px); }
 
-.sidebar .sidebar-info.small p { @include font-size(14px); }
+.sidebar .sidebar-info.small p { @include font-size(11px); }
 
 .sidebar .sidebar-info p:last-child {
   margin-bottom: 0;

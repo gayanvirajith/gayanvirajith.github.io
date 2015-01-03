@@ -16,9 +16,8 @@ browser_title: 'Online resume | Gayan Virajith'
   <div class="column-80">
     <h4>{{ resume.basics.name }} </h4>
     <address>
-      {{ resume.basics.location.address }} <br/>
+      {{ resume.basics.location.suburb }},
       {{ resume.basics.location.city.}},
-      {{ resume.basics.location.postalCode }},
       {{ resume.basics.location.country }}
     </address>
     <p>
@@ -128,5 +127,15 @@ browser_title: 'Online resume | Gayan Virajith'
   </div>
   <div class="column-80">
     <p>{{ resume.license | array_to_sentence_string }}</p>
+  </div>
+  <div class="column-20">
+    <p>Online portfolio</p>
+  </div>
+  <div class="column-80">
+    <p>
+      <a href="{{ resume.portfolio | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url }}">
+        {{ resume.portfolio | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url }}
+      </a>
+    </p>
   </div>
 </div>
