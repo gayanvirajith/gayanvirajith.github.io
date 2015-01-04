@@ -3,6 +3,8 @@
 	var _gaq = _gaq || [];
 	_gaq.push(['_setAccount', '{{ site.go.google_analytics_key }}']);
 	_gaq.push(['_trackPageview']);
+	_gaq.push('send', 'event', 'category', 'action', {'page': "{{ '/resume' | append: '/' | prepend: site.baseurl | prepend: site.url }}"});
+	_gaq.push('send', 'event', 'category', 'action', {'page': "{{ '/portfolio' | append: '/' | prepend: site.baseurl | prepend: site.url }}"});
 	(function() {
 	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
