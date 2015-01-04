@@ -133,8 +133,8 @@ browser_title: 'Online resume | Gayan Virajith'
   </div>
   <div class="column-80">
     <p>
-      <a href="{{ resume.portfolio | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url }}">
-        {{ resume.portfolio | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url }}
+      <a href="{{ resume.portfolio | append: '/' | prepend: site.baseurl | prepend: site.url }}">
+        {{ resume.portfolio | append: '/' | prepend: site.baseurl | prepend: site.url }}
       </a>
     </p>
   </div>
