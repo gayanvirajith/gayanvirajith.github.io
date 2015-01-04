@@ -10,18 +10,17 @@
 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	})();
-	var resumeLink = document.getElementById('#resume');var portfolioLink = document.getElementById('#portfolio');
-  function addListener(element, type, callback) {
-   if (element.addEventListener) element.addEventListener(type, callback);
-   else if (element.attachEvent) element.attachEvent('on' + type, callback);
-  }
-  addListener(resumeLink, 'click', function() {
-    ga('send', 'event', 'button', 'click', 'Resume menu item');
-  });
-  
-  addListener(portfolioLink, 'click', function() {
-    ga('send', 'event', 'button', 'click', 'Portfolio menu item');
-  });
-  
+  (function(document) {
+		var resumeLink = document.getElementById('#resume');var portfolioLink = document.getElementById('#portfolio');
+
+	  document.addEventListener('click', function(e) {
+	    var target = e.target;
+	    if (target == resumeLink) 
+			  ga('send', 'event', 'button', 'click', 'Resume menu item');
+	  	else if (target == portfolioLink)
+			  ga('send', 'event', 'button', 'click', 'Portfolio menu item');
+	  }, false);
+
+	})(document);  
   </script>
 {% endif %}
