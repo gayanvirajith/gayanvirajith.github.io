@@ -1,17 +1,18 @@
 ---
 layout: post
-title: "Template Factory"
-category: official-project
-thumbnail: harmony-thumb.jpg
-thumbnail_small: template-factory-nl-thumb-sm.jpg
-thumbnail_large: template-factory-nl-thumb-lg.jpg
+title: Template Factory
+category: "official-project"
+thumbnail: "harmony-thumb.jpg"
+thumbnail_small: "template-factory-nl-thumb-sm.jpg"
+thumbnail_large: "template-factory-nl-thumb-lg.jpg"
 tags: []
-permalink: template-factory.nl
-date:   2014-10-23 23:59:00
+permalink: "template-factory.nl"
+date: {}
 order: 1
+published: true
 ---
 
-The Template factory official website, managing and selling complete website + hosting solutions around the world.
+Company website designed for the Template Factory Pvt. Ltd.
 
 Site: [http://template-factory.nl](http://template-factory.nl)
 
@@ -19,11 +20,11 @@ Site: [http://template-factory.nl](http://template-factory.nl)
 
 ### Special features 
 
-- Shopping experience
-- Custom modules
-- Domain lookup API integration with a custom module via [www.whoisxmlapi.com](http://www.whoisxmlapi.com)
+- Integrated e-commerce
+- Developed custom modules
+- Developed API lookup integration with a custom module via [www.whoisxmlapi.com](http://www.whoisxmlapi.com)
 - Website directory
-- Client management
+- Client login and CRM integration
 
 <br/>
 
