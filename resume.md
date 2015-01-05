@@ -34,9 +34,9 @@ browser_title: 'Online resume | Gayan Virajith'
 
 <h5 class="header">Profile</h5>
 <div class="resume-section">
-  <p>
-    {{ resume.basics.summary }}
-  </p>
+  <blockquote>
+    <p>{{ resume.basics.summary }}</p>
+  </blockquote>
 </div>
 
 <h5 class="header">Keywords</h5>
