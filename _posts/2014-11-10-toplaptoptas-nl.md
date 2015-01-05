@@ -9,7 +9,7 @@ permalink: nannychouchou.com
 date:   2014-10-23 22:50:00
 ---
 
-Toplaptoptas - A dutch e-commerce website made with Magento.
+Toplaptoptas - A Magento web shop for dutch client.
 
 Site: [http://toplaptoptas.nl](http://toplaptoptas.nl/)
 
@@ -17,9 +17,9 @@ Site: [http://toplaptoptas.nl](http://toplaptoptas.nl/)
 
 ### Special features
 
-- Responsive.
-- Full custom theme made from scratch.
-- Custom magento module for manufacture listing.
+- Responsive
+- Developed full custom theme made from scratch.
+- Implemented custom magento module for manufacture listing.
 
 <br/>
 
