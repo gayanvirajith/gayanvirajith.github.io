@@ -57,10 +57,6 @@ browser_title: 'Online resume | Gayan Virajith'
     <p>{{ edu.institution }}</p>
   </div>
 {% endfor %}
-</div>
-
-<h5 class="header">Distinctions</h5>
-<div class="resume-section">
 {% for distinction in resume.distinctions %}
   <div class="column-20">
     <p>{{ distinction.studyType}}</p>
