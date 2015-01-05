@@ -39,6 +39,13 @@ browser_title: 'Online resume | Gayan Virajith'
   </p>
 </div>
 
+<h5 class="header">Keywords</h5>
+<div class="resume-section">
+  <p>
+    {{ resume.basics.keywords }}
+  </p>
+</div>
+
 <h5 class="header">Education</h5>
 <div class="resume-section">
 {% for edu in resume.education %}
