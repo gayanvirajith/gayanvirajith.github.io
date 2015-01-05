@@ -11,16 +11,13 @@
 	})();
   (function(document) {
 		var resumeLink = document.getElementById('#resume');var portfolioLink = document.getElementById('#portfolio');
-		ga('send', 'event', 'category', 'action', {'page': "{{ '/resume' | append: '/' | prepend: site.baseurl }}"});
-		ga('send', 'event', 'category', 'action', {'page': "{{ '/portfolio' | append: '/' | prepend: site.baseurl }}"});
 	  document.addEventListener('click', function(e) {
 	    var target = e.target;
 	    if (target == resumeLink) 
-			  ga('send', 'event', 'button', 'click', 'Resume menu item');
+				_gaq.push(['_trackEvent', 'resume', 'Resume menu item']);
 	  	else if (target == portfolioLink)
-			  ga('send', 'event', 'button', 'click', 'Portfolio menu item');
+			 	_gaq.push(['_trackEvent', 'portfolio', 'portfolio menu item']);
 	  }, false);
-
 	})(document);  
   </script>
 {% endif %}
