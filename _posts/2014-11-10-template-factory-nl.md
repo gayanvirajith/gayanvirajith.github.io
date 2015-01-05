@@ -7,7 +7,7 @@ thumbnail_small: "template-factory-nl-thumb-sm.jpg"
 thumbnail_large: "template-factory-nl-thumb-lg.jpg"
 tags: []
 permalink: "template-factory.nl"
-date: {}
+date: 2014-10-23 23:59:00
 order: 1
 published: true
 ---
