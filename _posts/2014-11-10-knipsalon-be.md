@@ -9,7 +9,7 @@ permalink: knipsalon.be
 date:   2014-10-23 23:55:00
 ---
 
-Knip Salon - A Dutch beauty salon website.
+Knip Salon - A website for dutch beauty salon.
 
 Site: [http://knipsalon.be](http://knipsalon.be/)
 
@@ -20,8 +20,8 @@ Site: [http://knipsalon.be](http://knipsalon.be/)
 - Responsive
 - Cosmetic Products directory
 - Used ProcessWire [FormBuilder](http://modules.processwire.com/modules/form-builder/) 
-- Cache management with ProcessWire [ProCache](http://modules.processwire.com/modules/pro-cache/)
-- Custom module for map views with color markers, using Google Map version 3
+- Integrated cache management with ProcessWire [ProCache](http://modules.processwire.com/modules/pro-cache/)
+- Developed custom module for map views with color markers, using Google Map version 3
 
 <br/>
 
