@@ -29,7 +29,7 @@
   },
   "work": [
     {
-      "company": "Mearch B.V, the Netherlands",
+      "company": "Mearch B.V. Colombo / Netherlands",
       "position": "Senior Software Engineer",
       "website": "http://template-factory.nl",
       "startDate": "February 2014",
@@ -47,7 +47,7 @@
       ]
     },
     {
-      "company": "Mearch B.V, the Netherlands",
+      "company": "Mearch B.V. Colombo / Netherlands",
       "position": "Software Engineer",
       "website": "http://template-factory.nl",
       "startDate": "February 2013",
@@ -93,14 +93,14 @@
     },
     {
       "company": "Lalith Athulathmudali Training & Vocational Centre",
-      "position": "Visiting Lecturer",
+      "position": "Teacher",
       "website": "http://lavtc.lk",
       "startDate": "January 2010",
       "endDate": "June 2013",
       "summary": "",
       "highlights": [
-        "Lecturer,  Certificate course in Java programming.",
-        "Maintaining practical Lab sessions.",
+        "Certificate course in Java programming.",
+        "Maintained practical Lab sessions.",
         "Technical problem solving and motivating students as for their future plans.",
       ]
     },

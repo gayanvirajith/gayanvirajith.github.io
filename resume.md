@@ -74,7 +74,7 @@ browser_title: 'Online resume | Gayan Virajith'
    <p>{{ w.startDate }} {% if w.endDate != '' %}- {{ w.endDate }}{% endif %}</p>
  </div>
  <div class="column-80">
-   <p>{{ w.company }}, {{ w.position }}</p>
+   <p>{{ w.position }}, {{ w.company }}</p>
    <ul>
    {% for point in w.highlights %}
    <li>
