@@ -104,7 +104,7 @@ browser_title: 'Online resume | Gayan Virajith'
 </div>
 
 
-<h5 class="header">Open source projects</h5>
+<h5 class="header">Open source projects - <small>{{ resume.basics.github }}</small></h5>
 <div class="resume-section">
 {% for project in resume.opensourceProjects %}
 <div class="column-20">
@@ -112,7 +112,7 @@ browser_title: 'Online resume | Gayan Virajith'
 </div>
 <div class="column-80">
   <p>{{ project.name }}</p>
-  <p>{{ project.description }} Source code available on <a title="{{ project.name }}" href="{{ project.url }}" target="_blank">{{ project.urlLabel}}</a></p>
+  <p>{{ project.description }}</p>
 </div>
 {% endfor %}
 </div>
