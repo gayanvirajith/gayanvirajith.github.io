@@ -2,7 +2,7 @@
 layout: page
 title: About me
 browser_title: Gayan Virajith | Web developer from Depanama, Sri Lanka
-meta_description: Gayan Virajith, Web Developer at Mearch Pvt Ltd (template-factory.nl). Based in Depanama, Pannipitiya, Sri Lanka
+meta_description: Gayan Virajith, Web Developer at Mearch BV the Netherlands (template-factory.nl). Based in Depanama, Pannipitiya, Sri Lanka
 ---
 
 Hi, I am Gayan Virajith, a developer (who works on the web) based on Depanama, 

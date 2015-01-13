@@ -3,6 +3,17 @@ layout: default
 browser_title: Gayan Virajith | Web developer based in Colombo, Sri Lanka
 ---
 <div class="posts">
+
+  <blockquote>
+    <p>Hi there, I am Gayan Virajith. A self-motivated Developer (who works on the web) based on Colombo, Sri Lanka. Feel free to refer my <a href="{{ '/resume' | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url }}">CV</a> and <a href="{{ '/portfolio' | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url }}">Portfolio</a>. You may also like to see my <a class="sidebar-nav-item" 
+        href="https://github.com/{{ site.go.social.github }}"
+        target="_blank">
+        GitHub
+    </a>(Sometime I write code to community too). Thanks
+    </p>
+  </blockquote>
+  <h2>Recent posts </h2>
+  <hr/>
   {% for post in paginator.posts %}
   <article class="post">
     <h1 class="post-title">

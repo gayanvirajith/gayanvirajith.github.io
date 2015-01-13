@@ -30,7 +30,7 @@ styles, `#sidebar-checkbox` for behavior. -->
 		{% assign c = "" %}
 		{% endif %}
 
-		<a class="sidebar-nav-item {{ c }}" 
+		<a id="{{ item.title | downcase }}" class="sidebar-nav-item {{ c }}" 
 			href="{{ item.href | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url }}">
 			{{ item.title }}
 		</a>
@@ -46,8 +46,7 @@ styles, `#sidebar-checkbox` for behavior. -->
 
 	<div class="sidebar-info small">
 	    <p>
-	      Content belongs to author. Design concept is free for study, use, 
-	      reproduce and distribute.
+	      Copyright &copy; Gayan Virajith - {{ site.time | date: '%Y' }}
 	    </p>
 	</div>
 

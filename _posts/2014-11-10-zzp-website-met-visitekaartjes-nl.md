@@ -9,18 +9,18 @@ permalink: zzp-website-met-visitekaartjes.nl
 date:   2014-10-23 23:58:00
 ---
 
-A well managed responsive website for a dutch freelancer. 
+A well managed, super-speed, responsive website for a dutch freelancer. 
 
 Site: [http://zzp-website-met-visitekaartjes.nl](http://zzp-website-met-visitekaartjes.nl/)
 
 <!--more-->
 
 ### Special features 
-- Optimized and followed [Google pagespeed](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fzzp-website-met-visitekaartjes.nl%2F&tab=desktop) guidelines.
-- Custom modules for site settings
+- Optimized and followed [Google page-speed](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fzzp-website-met-visitekaartjes.nl%2F&tab=desktop) guidelines.
+- Developed custom modules for site settings
 - Used ProcessWire [FormBuilder](http://modules.processwire.com/modules/form-builder/)
-- Cache management with ProcessWire [ProCache](http://modules.processwire.com/modules/pro-cache/)
-- Self manageble color scheme for the template where client can change the site 
+- Integrated cache management with ProcessWire [ProCache](http://modules.processwire.com/modules/pro-cache/)
+- Self manageable color scheme for the template where client can change the site 
 color scheme by just one click.
 
 <br/>

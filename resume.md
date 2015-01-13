@@ -16,9 +16,8 @@ browser_title: 'Online resume | Gayan Virajith'
   <div class="column-80">
     <h4>{{ resume.basics.name }} </h4>
     <address>
-      {{ resume.basics.location.address }} <br/>
+      {{ resume.basics.location.suburb }},
       {{ resume.basics.location.city.}},
-      {{ resume.basics.location.postalCode }},
       {{ resume.basics.location.country }}
     </address>
     <p>
@@ -35,8 +34,15 @@ browser_title: 'Online resume | Gayan Virajith'
 
 <h5 class="header">Profile</h5>
 <div class="resume-section">
+  <blockquote>
+    <p>{{ resume.basics.summary }}</p>
+  </blockquote>
+</div>
+
+<h5 class="header">Keywords</h5>
+<div class="resume-section">
   <p>
-    {{ resume.basics.summary }}
+    {{ resume.basics.keywords }}
   </p>
 </div>
 
@@ -51,10 +57,6 @@ browser_title: 'Online resume | Gayan Virajith'
     <p>{{ edu.institution }}</p>
   </div>
 {% endfor %}
-</div>
-
-<h5 class="header">Distinctions</h5>
-<div class="resume-section">
 {% for distinction in resume.distinctions %}
   <div class="column-20">
     <p>{{ distinction.studyType}}</p>
@@ -72,7 +74,7 @@ browser_title: 'Online resume | Gayan Virajith'
    <p>{{ w.startDate }} {% if w.endDate != '' %}- {{ w.endDate }}{% endif %}</p>
  </div>
  <div class="column-80">
-   <p>{{ w.company }}, {{ w.position }}</p>
+   <p>{{ w.position }}, {{ w.company }}</p>
    <ul>
    {% for point in w.highlights %}
    <li>
@@ -102,7 +104,7 @@ browser_title: 'Online resume | Gayan Virajith'
 </div>
 
 
-<h5 class="header">Open source projects</h5>
+<h5 class="header">Open source projects - <small>{{ resume.basics.github }}</small></h5>
 <div class="resume-section">
 {% for project in resume.opensourceProjects %}
 <div class="column-20">
@@ -110,7 +112,7 @@ browser_title: 'Online resume | Gayan Virajith'
 </div>
 <div class="column-80">
   <p>{{ project.name }}</p>
-  <p>{{ project.description }} Source code available on <a title="{{ project.name }}" href="{{ project.url }}" target="_blank">{{ project.urlLabel}}</a></p>
+  <p>{{ project.description }}</p>
 </div>
 {% endfor %}
 </div>
@@ -128,5 +130,15 @@ browser_title: 'Online resume | Gayan Virajith'
   </div>
   <div class="column-80">
     <p>{{ resume.license | array_to_sentence_string }}</p>
+  </div>
+  <div class="column-20">
+    <p>Online portfolio</p>
+  </div>
+  <div class="column-80">
+    <p>
+      <a href="{{ resume.portfolio | append: '/' | prepend: site.baseurl | prepend: site.url }}">
+        {{ resume.portfolio | append: '/' | prepend: site.baseurl | prepend: site.url }}
+      </a>
+    </p>
   </div>
 </div>
